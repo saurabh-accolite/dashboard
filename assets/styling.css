@@ -1,0 +1,144 @@
+.dash-spreadsheet .row {
+  flex-wrap: nowrap;
+  padding-left: 0px; 
+  /* 20  */
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* .dash-spreadsheet-menu .export{
+    margin-left: 20px;
+    margin-bottom: 20px;
+} */
+
+.dash-spreadsheet-menu{
+    float: right;
+    margin-top: -60px;
+}
+
+.modal-title{
+  width: 700px; 
+}
+
+/* .modal-dropdown{
+  width:200px;
+  padding-left: 20px;
+} */
+
+.download-icon{
+  position: absolute;
+  z-index: 10;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.cell-table{
+  width : 1041px !important;
+  /* Need to make generic */
+}
+
+
+
+#health-assessment-percentage:hover , #symptom-checker-percentage:hover, #babylon-user-percentage:hover,
+#babylon-reg-count:hover,#babylon-healthassessment-count:hover,#babylon-symptomchecker-count:hover,#tabs-styled-with-props:hover,
+#custTabs-styled-with-props:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer; 
+}
+
+.DateRangePicker_picker{
+  z-index: 999;
+}
+
+.DateRangePicker_1{
+   bottom: 14px;
+}
+
+.dateRangeLabel{
+  position:relative;
+  top: -10px;
+}
+.export {
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 13px;
+	text-decoration:none;
+}
+.export:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.export:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* position: absolute; z-index: 1; top: 30%; right: 50%; */
+/* ---------------------------------- component Loading ------------------------ */
+._dash-loading-callback {
+  /* position: relative;
+  top: -10px; */
+  position: fixed; z-index: 1; top: 5%; right: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  transform-origin: 5px 15px;
+  -webkit-animation: _dash-loading-callback 2s infinite linear;
+  animation: _dash-loading-callback 2s infinite linear;
+}
+
+._dash-loading-callback::before, ._dash-loading-callback::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+}
+
+._dash-loading-callback::before {
+  left: -8.66px;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+}
+
+._dash-loading-callback::after {
+  left: 8.66px;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+}
+
+@-webkit-keyframes _dash-loading-callback {
+  0% {
+    transform: rotateZ(0deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotateZ(720deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes _dash-loading-callback {
+  0% {
+    transform: rotateZ(0deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotateZ(720deg) translate3d(0, 0, 0);
+  }
+}
