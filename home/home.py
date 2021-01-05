@@ -1,6 +1,6 @@
 import dash_bootstrap_components as dbc
 import dash_html_components as html
-from datetime import timedelta,datetime 
+from datetime import timedelta,datetime  
 
 # import dash
 from dash.dependencies import Input, Output,State
@@ -18,61 +18,49 @@ import util.appLogger as appLogger
 logger = appLogger.get_logger(__name__)
 print = logger.debug
 
+startDate = pd.to_datetime('2020-12-01')
+endDate = pd.to_datetime('2020-12-31')
+minDate = pd.to_datetime('2020-12-01')
+maxDate = pd.to_datetime('2020-12-31')
 
 def get_cards(count, id, description):
-        ## Give yes or no -- for trendlines
-        # event_count = self.util.get_event_count(event, 'today')[0]
-        # event_count = 0 if pd.isna(event_count) else event_count
         return dbc.Card(
             dbc.CardBody(
                 [
-                    # count
-                    # dbc.Spinner(
-                    #     [
-                    html.H1(children=count,id=id, className="card-title", style={'display': 'inline-block'}),
-                    # description
-                    html.P(description, style={'display': 'inline-block', 'text-indent': '12px'},className="card-title")
-                    # html.P(" ", style={'display':'inline-block','text-indent':'6px'}, className="card-title"),
-                    # html.Hr(),
-                    # html.Div(homeUtil.customTrendLine(df,x,y,country), id=id+'trendline',
-                    #         style={'text-align': 'center', 'align': 'center'})
-                    #     ],
-                    # color="primary",
-                    #     type="grow"
-                    # ),
-                ])
+                    html.H1(children=count,
+                            id=id, className="card-title", style={'display': 'inline-block'}),
+                    html.P(description, style={
+                        'display': 'inline-block', 'text-indent': '12px',className="card-title"}),
+                ]
+            )
         )
 
 initial_usage_cards_1 = dbc.CardDeck(
     [   
-        get_cards(homeUtil.foRegCard('PH')[0],'first-open-count',"Total First Open"),
-        get_cards(homeUtil.foRegCard('PH')[1],'reg-count',"Total Registration"),
-        get_cards(homeUtil.babylonCard('PH')[0],'babylon-ha-count',"Total Health Assesment "),
-        get_cards(homeUtil.babylonCard('PH')[1],'babylon-sc-count',"Total Symptom Checker"),
-        # get_cards(homeUtil.firstOpenCard('P'),'first-open-count',"Total First Open Users"),
-        # get_cards(homeUtil.firstOpenCard('PH'),'first-open-count',"Total First Open Users"),
-        # get_cards([decrpt_merge['ehr_MY.encounterId'].nunique()],'ehr_registered-user-count',"Total Encounters"),
-        # EHRUtil.get_cards(['Full Assessment Completed-Total'],'ehr_healthAsses-user-count',"Full Assessment Completed"),
-        
+        get_cards(homeUtil.foRegCard('PH', '2020-12-01', '2020-12-31')[0],'first-open-count',"Total First Open"),
+        get_cards(homeUtil.foRegCard('PH', '2020-12-01', '2020-12-31')[1],'reg-count',"Total Registration"),
+        get_cards(homeUtil.babylonCard('PH', '2020-12-01', '2020-12-31')[0],'babylon-ha-count',"Total Health Assesment "),
+        get_cards(homeUtil.babylonCard('PH', '2020-12-01', '2020-12-31')[1],'babylon-sc-count',"Total Symptom Checker"), 
     ])
 
 
-countryDropdown = html.Div([
+# countryDropdown = html.Div([
 
-                        html.Div([
-                    #dropdown
-                        dcc.Dropdown(
-                            id='country-dropdown',
-                            options=[{'label':value, 'value':value} for value in util.config.countryCode],
-                            placeholder="Select Country",
-                            value="PH",
-                            # multi=True
-                            # style={'width':'50%'}
-                        )
-                    ], style={'width':'10%','margin':'auto','margin-right':'10px'}
-                    ),
+#                         html.Div([
+#                         dcc.Dropdown(
+#                             id='country-dropdown',
+#                             options=[{'label':value, 'value':value} for value in util.config.countryCode],
+#                             placeholder="Select Country",
+#                             value="PH",
+#                         )
+#                     ], style={'width':'10%','margin':'auto','margin-right':'0px'}),
 
-])
+#                     html.Div([
+#                         html.Div(
+                            
+#                                     util.getDateRangePicker('date-picker-range'),
+#                                     style={'text-align':'left'}),
+#                     ]) 
 
 # initial_usage_cards = dbc.CardDeck(
 #     [
@@ -126,39 +114,47 @@ bigNoChart = html.Div([
 )
 
 
+dropdownAndDatePicker = html.Div([
+    
+    # html.Div([
+                html.Div(
+                    util.getDateRangePicker('date-picker-range', startDate, endDate, minDate, maxDate),
+                    style={'text-align':'left', 'display': 'inline-block','margin':'auto','margin-left':'680px'}
+                ),
+
+                html.Div([
+                    dcc.Dropdown(
+                        id='country-dropdown',
+                        options=[{'label':value, 'value':value} for value in util.config.countryCode],
+                        placeholder="Select Country",
+                        value="PH",
+                    )
+                ], style={'display': 'inline-block','width':'15%','margin':'auto','float':'right'}), 
+        # ]),
+])
+
 layout = html.Div([
-        # dbc.Badge(
-        #     f"Date range - {EHRUtil.decrpt_merge['ehr_MY.auditDetail.createTime'].min()[:10]}  -  {EHRUtil.decrpt_merge['ehr_MY.auditDetail.createTime'].max()[:10]}", 
-        #     color="light", className="mr-1",style={"float":"right"}
-        #     ),
-        # html.Br(),
-        countryDropdown,
-        # dropdwn,
-        initial_usage_cards_1,
-        # html.Hr(),
-        # html.Br(),
-        
-        bigNoChart,
-        # usageChart,
-        # overlapChart,
-        # ChurnChart
-        
-        
-    ])
+    dropdownAndDatePicker,
+    html.Hr(),
+    html.Br(),
+    initial_usage_cards_1,
+    bigNoChart
+])
 
 #=============================================== callbacks ====================================================
 
-@app.callback([Output('first-open-count', 'children'), Output('reg-count', 'children'),  Output('babylon-ha-count', 'children'),  Output('babylon-sc-count', 'children')], 
-              [Input('country-dropdown','value')
-              ])
-def update_cards(value):
-    
+@app.callback([Output('first-open-count', 'children'), Output('reg-count', 'children'),  
+               Output('babylon-ha-count', 'children'),  Output('babylon-sc-count', 'children')], 
+              [Input('country-dropdown','value'), Input('date-picker-range','start_date'),
+            Input('date-picker-range','end_date')])
+
+def update_cards(value, startDate, endDate):
     print(">>CALLBACK:----realTime event-line Callback-------")
     print(value)
-    # print(dash.callback_context.triggered)
-    # util.doUpdateQueryResults()
+    print(startDate)
+    print(endDate)
     if value is not None:
-        return [homeUtil.foRegCard(value)[0], homeUtil.foRegCard(value)[1], homeUtil.babylonCard(value)[0],  homeUtil.babylonCard(value)[1]]
+        return [homeUtil.foRegCard(value, startDate, endDate)[0], homeUtil.foRegCard(value, startDate, endDate)[1], homeUtil.babylonCard(value, startDate, endDate)[0],  homeUtil.babylonCard(value, startDate, endDate)[1]]
     return [None,None,None,None]
 
 @app.callback([Output('big-no-trendline-div','children')],

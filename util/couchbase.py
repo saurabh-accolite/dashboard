@@ -95,8 +95,6 @@ class CouchbasePython:
         for row in event_query_result:
             eventTmp.append(row)
         df_event = json_normalize(eventTmp)
-        print(df_event.columns)
-        print(df_event['events'][0])
         for i, row in df_event.iterrows():
             hac = df_event['events'][i][2]['pulse.babylon.healthAssessment.chat.fullAssessment.start']
             df_event.at[i,'ha'] = hac
@@ -278,6 +276,5 @@ class CouchbasePython:
             eventTmp.append(row)
         df_event = json_normalize(eventTmp)
         return df_event
-
 
 

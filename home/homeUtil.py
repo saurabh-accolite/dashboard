@@ -1,7 +1,7 @@
 import re
 import json
 import glob
-from datetime import timezone, timedelta
+from datetime import timezone, timedelta 
 from datetime import date
 import datetime as dt
 import time
@@ -16,7 +16,6 @@ from pandas import json_normalize
 import plotly
 from plotly.tools import mpl_to_plotly
 from plotly.subplots import make_subplots
-# from plotly.offline import *
 from plotly import graph_objs as go
 import plotly.express as px
 import plotly.figure_factory as ff
@@ -52,17 +51,35 @@ class HomeUtil:
 
     #     return sumFirstOpen
 
-    def foRegCard(self, country):
-        
-        regCount = self.regDf[self.regDf['countryCode'] == country].Registration.sum()
-        foCount = self.regDf[self.regDf['countryCode'] == country].FirstOpen.sum()
+    def foRegCard(self, country, startDate, endDate):
+        df = self.regDf[self.regDf['date'] > startDate] 
+        df = df[df['date'] < endDate]
+        regCount = df[df['countryCode'] == country].Registration.sum()
+        foCount = df[df['countryCode'] == country].FirstOpen.sum()
 
         return foCount,regCount
+    # def firstOpenCard(self, country, startDate, endDate):
+    #     df = self.firstOpenDf[self.firstOpenDf['date'] > startDate] 
+    #     df = df[df['date'] < endDate] 
+
+    #     sumFirstOpen = df[df['countryCode'] == country].distinctCount.sum()
+    #     return sumFirstOpen
+
+    # def regCard(self, country, startDate, endDate):
+    #     df = self.regDf[self.regDf['date'] > startDate] 
+    #     df = df[df['date'] < endDate]
+
+    #     regCount = df[df['countryCode'] == country].Registration.sum()
+    #     return regCount
     
-    def babylonCard(self, country):
-        babylonHACount = self.babylonDf[self.babylonDf['countryCode'] == country].ha.sum()
-        babylonSCCount = self.babylonDf[self.babylonDf['countryCode'] == country].sc.sum()
+    def babylonCard(self, country, startDate, endDate):
+        df = self.babylonDf[self.babylonDf['date'] > startDate] 
+        df = df[df['date'] < endDate]
+
+        babylonHACount = df[df['countryCode'] == country].ha.sum()
+        babylonSCCount = df[df['countryCode'] == country].sc.sum()
         return babylonHACount, babylonSCCount
+
     
     def customTrendLine(self,df,x,y,country):
 
