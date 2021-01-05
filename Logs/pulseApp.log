@@ -358,3 +358,554 @@ Total time taken(H:M:S) - 00:00:06
 2021-01-04 20:10:50,196::__main__::DEBUG::Thread-11 - >>CALLBACK: ----Initial Callback-------
 2021-01-04 20:10:50,197::__main__::DEBUG::Thread-11 - --
 2021-01-04 20:10:50,198::__main__::DEBUG::Thread-11 - >>INFO: Setting Last updated to -> 2021-01-04 20:10:50
+2021-01-05 10:36:47,548::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 10:39:25,587::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 10:45:44,949::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 10:46:34,115::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 10:47:05,428::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 10:51:08,454::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 10:51:14,028::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:09 
+---------------------------------------------------------------------------------
+2021-01-05 10:51:40,001::home.home::DEBUG::Thread-7 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 10:51:40,002::home.home::DEBUG::Thread-7 - PH
+2021-01-05 10:55:15,521::home.home::DEBUG::Thread-9 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 10:55:37,769::home.home::DEBUG::Thread-9 - VN
+2021-01-05 10:55:45,232::home.home::DEBUG::Thread-10 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 10:55:45,233::home.home::DEBUG::Thread-10 - MY
+2021-01-05 10:55:49,480::home.home::DEBUG::Thread-11 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 10:55:49,481::home.home::DEBUG::Thread-11 - ID
+2021-01-05 10:56:39,690::__main__::DEBUG::Thread-12 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 10:56:39,691::__main__::DEBUG::Thread-12 - --
+2021-01-05 10:56:39,691::__main__::DEBUG::Thread-12 - >>INFO: Setting Last updated to -> 2021-01-05 10:56:39
+2021-01-05 11:01:40,696::__main__::DEBUG::Thread-13 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 11:01:40,697::__main__::DEBUG::Thread-13 - --
+2021-01-05 11:01:40,697::__main__::DEBUG::Thread-13 - >>INFO: Setting Last updated to -> 2021-01-05 11:01:40
+2021-01-05 11:06:40,694::__main__::DEBUG::Thread-15 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 11:06:40,694::__main__::DEBUG::Thread-15 - --
+2021-01-05 11:06:40,695::__main__::DEBUG::Thread-15 - >>INFO: Setting Last updated to -> 2021-01-05 11:06:40
+2021-01-05 11:11:41,688::__main__::DEBUG::Thread-17 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 11:11:41,689::__main__::DEBUG::Thread-17 - --
+2021-01-05 11:11:41,689::__main__::DEBUG::Thread-17 - >>INFO: Setting Last updated to -> 2021-01-05 11:11:41
+2021-01-05 11:16:41,675::__main__::DEBUG::Thread-19 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 11:16:41,676::__main__::DEBUG::Thread-19 - --
+2021-01-05 11:16:41,677::__main__::DEBUG::Thread-19 - >>INFO: Setting Last updated to -> 2021-01-05 11:16:41
+2021-01-05 11:21:41,674::__main__::DEBUG::Thread-21 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 11:21:41,674::__main__::DEBUG::Thread-21 - --
+2021-01-05 11:21:41,675::__main__::DEBUG::Thread-21 - >>INFO: Setting Last updated to -> 2021-01-05 11:21:41
+2021-01-05 11:26:41,673::__main__::DEBUG::Thread-23 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 11:26:41,673::__main__::DEBUG::Thread-23 - --
+2021-01-05 11:26:41,674::__main__::DEBUG::Thread-23 - >>INFO: Setting Last updated to -> 2021-01-05 11:26:41
+2021-01-05 11:31:41,685::__main__::DEBUG::Thread-25 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 11:31:41,685::__main__::DEBUG::Thread-25 - --
+2021-01-05 11:31:41,686::__main__::DEBUG::Thread-25 - >>INFO: Setting Last updated to -> 2021-01-05 11:31:41
+2021-01-05 11:36:39,994::__main__::DEBUG::Thread-27 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 11:36:39,995::__main__::DEBUG::Thread-27 - --
+2021-01-05 11:36:39,997::__main__::DEBUG::Thread-27 - >>INFO: Setting Last updated to -> 2021-01-05 11:36:39
+2021-01-05 11:41:41,687::__main__::DEBUG::Thread-29 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 11:41:41,688::__main__::DEBUG::Thread-29 - --
+2021-01-05 11:41:41,688::__main__::DEBUG::Thread-29 - >>INFO: Setting Last updated to -> 2021-01-05 11:41:41
+2021-01-05 11:46:39,996::__main__::DEBUG::Thread-31 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 11:46:39,997::__main__::DEBUG::Thread-31 - --
+2021-01-05 11:46:39,999::__main__::DEBUG::Thread-31 - >>INFO: Setting Last updated to -> 2021-01-05 11:46:39
+2021-01-05 11:51:39,997::__main__::DEBUG::Thread-33 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 11:51:39,998::__main__::DEBUG::Thread-33 - --
+2021-01-05 11:51:40,000::__main__::DEBUG::Thread-33 - >>INFO: Setting Last updated to -> 2021-01-05 11:51:40
+2021-01-05 11:56:41,679::__main__::DEBUG::Thread-35 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 11:56:41,679::__main__::DEBUG::Thread-35 - --
+2021-01-05 11:56:41,680::__main__::DEBUG::Thread-35 - >>INFO: Setting Last updated to -> 2021-01-05 11:56:41
+2021-01-05 12:01:41,681::__main__::DEBUG::Thread-37 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 12:01:41,681::__main__::DEBUG::Thread-37 - --
+2021-01-05 12:01:41,682::__main__::DEBUG::Thread-37 - >>INFO: Setting Last updated to -> 2021-01-05 12:01:41
+2021-01-05 12:06:41,674::__main__::DEBUG::Thread-39 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 12:06:41,675::__main__::DEBUG::Thread-39 - --
+2021-01-05 12:06:41,676::__main__::DEBUG::Thread-39 - >>INFO: Setting Last updated to -> 2021-01-05 12:06:41
+2021-01-05 12:09:06,637::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 12:09:24,313::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 12:09:53,102::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 12:10:48,926::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 12:11:24,222::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 12:11:48,081::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 12:11:57,423::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:11 
+---------------------------------------------------------------------------------
+2021-01-05 12:12:10,570::home.home::DEBUG::Thread-6 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 12:12:10,571::home.home::DEBUG::Thread-6 - PH
+2021-01-05 12:17:11,003::__main__::DEBUG::Thread-8 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 12:17:11,003::__main__::DEBUG::Thread-8 - --
+2021-01-05 12:17:11,006::__main__::DEBUG::Thread-8 - >>INFO: Setting Last updated to -> 2021-01-05 12:17:11
+2021-01-05 12:22:10,661::__main__::DEBUG::Thread-10 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 12:22:10,662::__main__::DEBUG::Thread-10 - --
+2021-01-05 12:22:10,667::__main__::DEBUG::Thread-10 - >>INFO: Setting Last updated to -> 2021-01-05 12:22:10
+2021-01-05 12:27:10,667::__main__::DEBUG::Thread-12 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 12:27:10,668::__main__::DEBUG::Thread-12 - --
+2021-01-05 12:27:10,670::__main__::DEBUG::Thread-12 - >>INFO: Setting Last updated to -> 2021-01-05 12:27:10
+2021-01-05 12:32:11,647::__main__::DEBUG::Thread-14 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 12:32:11,982::__main__::DEBUG::Thread-14 - --
+2021-01-05 12:32:11,983::__main__::DEBUG::Thread-14 - >>INFO: Setting Last updated to -> 2021-01-05 12:32:11
+2021-01-05 12:37:11,645::__main__::DEBUG::Thread-16 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 12:37:11,645::__main__::DEBUG::Thread-16 - --
+2021-01-05 12:37:11,647::__main__::DEBUG::Thread-16 - >>INFO: Setting Last updated to -> 2021-01-05 12:37:11
+2021-01-05 12:42:11,648::__main__::DEBUG::Thread-18 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 12:42:11,649::__main__::DEBUG::Thread-18 - --
+2021-01-05 12:42:11,651::__main__::DEBUG::Thread-18 - >>INFO: Setting Last updated to -> 2021-01-05 12:42:11
+2021-01-05 12:47:11,654::__main__::DEBUG::Thread-20 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 12:47:11,655::__main__::DEBUG::Thread-20 - --
+2021-01-05 12:47:11,657::__main__::DEBUG::Thread-20 - >>INFO: Setting Last updated to -> 2021-01-05 12:47:11
+2021-01-05 12:51:41,600::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 12:54:10,898::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 12:54:29,402::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 12:55:10,549::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:43 
+---------------------------------------------------------------------------------
+2021-01-05 12:55:21,801::home.home::DEBUG::Thread-6 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 12:55:21,802::home.home::DEBUG::Thread-6 - PH
+2021-01-05 12:58:25,359::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 12:58:27,708::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:04 
+---------------------------------------------------------------------------------
+2021-01-05 12:58:49,148::home.home::DEBUG::Thread-6 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 12:58:49,150::home.home::DEBUG::Thread-6 - PH
+2021-01-05 12:58:51,988::home.home::DEBUG::Thread-8 -           date                                             events  ... FirstOpen  countryCode
+0   2020-05-09  [{'order': 1, 'pulse.firstOpen': 1}, {'order':...  ...       1.0           PH
+1   2020-11-08  [{'order': 1, 'pulse.firstOpen': 1784}, {'orde...  ...    1784.0           ID
+2   2020-05-06  [{'order': 1, 'platform.UserRegistration.creat...  ...       NaN           PH
+3   2020-09-02  [{'order': 1, 'pulse.firstOpen': 728}, {'order...  ...     728.0           PH
+4   2020-04-28  [{'order': 1, 'pulse.firstOpen': 1}, {'order':...  ...       1.0           PH
+5   2020-11-27  [{'order': 1, 'pulse.firstOpen': 6999}, {'orde...  ...    6999.0           MY
+6   2020-05-17  [{'order': 1, 'pulse.firstOpen': 2}, {'order':...  ...       2.0           VN
+7   2020-08-16  [{'order': 1, 'pulse.firstOpen': 169}, {'order...  ...     169.0           MY
+8   2020-04-21  [{'order': 1, 'pulse.firstOpen': 1}, {'order':...  ...       1.0           PH
+9   2020-07-01  [{'order': 1, 'pulse.firstOpen': 5820}, {'orde...  ...    5820.0           VN
+10  2020-09-05  [{'order': 1, 'pulse.firstOpen': 56}, {'order'...  ...      56.0           ID
+11  2020-11-17  [{'order': 1, 'pulse.firstOpen': 2312}, {'orde...  ...    2312.0           PH
+12  2020-07-31  [{'order': 1, 'pulse.firstOpen': 20352}, {'ord...  ...   20352.0           PH
+13  2020-11-07  [{'order': 1, 'pulse.firstOpen': 15915}, {'ord...  ...   15915.0           VN
+14  2020-10-19  [{'order': 1, 'pulse.firstOpen': 2392}, {'orde...  ...    2392.0           MY
+15  2020-12-23  [{'order': 1, 'pulse.firstOpen': 7504}, {'orde...  ...    7504.0           MY
+16  2020-05-27  [{'order': 1, 'pulse.firstOpen': 6617}, {'orde...  ...    6617.0           PH
+17  2020-07-14  [{'order': 1, 'pulse.firstOpen': 37245}, {'ord...  ...   37245.0           VN
+18  2020-10-28  [{'order': 1, 'pulse.firstOpen': 17950}, {'ord...  ...   17950.0           VN
+19  2020-12-15  [{'order': 1, 'pulse.firstOpen': 13451}, {'ord...  ...   13451.0           VN
+20  2020-12-08  [{'order': 1, 'pulse.firstOpen': 5313}, {'orde...  ...    5313.0           PH
+21  2020-09-04  [{'order': 1, 'pulse.firstOpen': 349}, {'order...  ...     349.0           MY
+22  2020-09-13  [{'order': 1, 'pulse.firstOpen': 216}, {'order...  ...     216.0           TH
+23  2020-05-08  [{'order': 1, 'pulse.firstOpen': 1}, {'order':...  ...       1.0           PH
+24  2020-07-08  [{'order': 1, 'pulse.firstOpen': 6097}, {'orde...  ...    6097.0           VN
+25  2020-12-15  [{'order': 1, 'pulse.firstOpen': 6085}, {'orde...  ...    6085.0           MY
+26  2020-09-29  [{'order': 1, 'pulse.firstOpen': 3081}, {'orde...  ...    3081.0           VN
+27  2020-03-10  [{'order': 1, 'pulse.firstOpen': 12}, {'order'...  ...      12.0           PH
+28  2020-08-21  [{'order': 1, 'pulse.firstOpen': 54}, {'order'...  ...      54.0           ID
+29  2020-10-23  [{'order': 1, 'pulse.firstOpen': 3077}, {'orde...  ...    3077.0           MY
+30  2020-05-02  [{'order': 1, 'platform.UserRegistration.creat...  ...       NaN           PH
+31  2020-10-14  [{'order': 1, 'pulse.firstOpen': 22557}, {'ord...  ...   22557.0           ID
+32  2020-09-17  [{'order': 1, 'pulse.firstOpen': 273}, {'order...  ...     273.0           MY
+33  2020-10-28  [{'order': 1, 'pulse.firstOpen': 10658}, {'ord...  ...   10658.0           PH
+34  2020-10-16  [{'order': 1, 'pulse.firstOpen': 7585}, {'orde...  ...    7585.0           TH
+35  2020-07-25  [{'order': 1, 'pulse.firstOpen': 1112}, {'orde...  ...    1112.0           MY
+36  2020-07-12  [{'order': 1, 'pulse.firstOpen': 22067}, {'ord...  ...   22067.0           TH
+37  2020-07-04  [{'order': 1, 'pulse.firstOpen': 2361}, {'orde...  ...    2361.0           TH
+38  2020-12-23  [{'order': 1, 'pulse.firstOpen': 7275}, {'orde...  ...    7275.0           PH
+39  2020-06-13  [{'order': 1, 'pulse.firstOpen': 2248}, {'orde...  ...    2248.0           TH
+40  2020-12-29  [{'order': 1, 'pulse.firstOpen': 10360}, {'ord...  ...   10360.0           VN
+41  2020-11-19  [{'order': 1, 'pulse.firstOpen': 1972}, {'orde...  ...    1972.0           TH
+42  2020-09-10  [{'order': 1, 'pulse.firstOpen': 872}, {'order...  ...     872.0           PH
+43  2020-12-27  [{'order': 1, 'pulse.firstOpen': 12246}, {'ord...  ...   12246.0           VN
+44  2020-08-10  [{'order': 1, 'pulse.firstOpen': 4735}, {'orde...  ...    4735.0           VN
+45  2020-06-21  [{'order': 1, 'pulse.firstOpen': 9098}, {'orde...  ...    9098.0           PH
+46  2020-07-30  [{'order': 1, 'pulse.firstOpen': 5270}, {'orde...  ...    5270.0           TH
+47  2020-09-27  [{'order': 1, 'pulse.firstOpen': 1735}, {'orde...  ...    1735.0           TH
+48  2020-06-15  [{'order': 1, 'pulse.firstOpen': 6691}, {'orde...  ...    6691.0           PH
+49  2020-11-18  [{'order': 1, 'pulse.firstOpen': 2828}, {'orde...  ...    2828.0           MY
+
+[50 rows x 6 columns]
+2021-01-05 13:03:49,698::__main__::DEBUG::Thread-9 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 13:03:49,698::__main__::DEBUG::Thread-9 - --
+2021-01-05 13:03:49,700::__main__::DEBUG::Thread-9 - >>INFO: Setting Last updated to -> 2021-01-05 13:03:49
+2021-01-05 13:04:16,839::home.home::DEBUG::Thread-15 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:04:16,840::home.home::DEBUG::Thread-15 - PH
+2021-01-05 13:07:34,556::home.home::DEBUG::Thread-23 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:07:34,557::home.home::DEBUG::Thread-23 - PH
+2021-01-05 13:08:26,814::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 13:08:28,622::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:04 
+---------------------------------------------------------------------------------
+2021-01-05 13:08:47,504::home.home::DEBUG::Thread-6 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:08:47,506::home.home::DEBUG::Thread-6 - PH
+2021-01-05 13:09:51,956::home.home::DEBUG::Thread-14 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:09:51,957::home.home::DEBUG::Thread-14 - PH
+2021-01-05 13:10:17,492::home.home::DEBUG::Thread-16 - 0     2020-05-09
+1     2020-11-08
+2     2020-05-06
+3     2020-09-02
+4     2020-04-28
+5     2020-11-27
+6     2020-05-17
+7     2020-08-16
+8     2020-04-21
+9     2020-07-01
+10    2020-09-05
+11    2020-11-17
+12    2020-07-31
+13    2020-11-07
+14    2020-10-19
+15    2020-12-23
+16    2020-05-27
+17    2020-07-14
+18    2020-10-28
+19    2020-12-15
+20    2020-12-08
+21    2020-09-04
+22    2020-09-13
+23    2020-05-08
+24    2020-07-08
+25    2020-12-15
+26    2020-09-29
+27    2020-03-10
+28    2020-08-21
+29    2020-10-23
+30    2020-05-02
+31    2020-10-14
+32    2020-09-17
+33    2020-10-28
+34    2020-10-16
+35    2020-07-25
+36    2020-07-12
+37    2020-07-04
+38    2020-12-23
+39    2020-06-13
+40    2020-12-29
+41    2020-11-19
+42    2020-09-10
+43    2020-12-27
+44    2020-08-10
+45    2020-06-21
+46    2020-07-30
+47    2020-09-27
+48    2020-06-15
+49    2020-11-18
+Name: date, dtype: object
+2021-01-05 13:13:57,477::home.home::DEBUG::Thread-23 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:13:57,478::home.home::DEBUG::Thread-23 - PH
+2021-01-05 13:13:59,958::home.home::DEBUG::Thread-25 - 0     2020-05-09
+1     2020-11-08
+2     2020-05-06
+3     2020-09-02
+4     2020-04-28
+5     2020-11-27
+6     2020-05-17
+7     2020-08-16
+8     2020-04-21
+9     2020-07-01
+10    2020-09-05
+11    2020-11-17
+12    2020-07-31
+13    2020-11-07
+14    2020-10-19
+15    2020-12-23
+16    2020-05-27
+17    2020-07-14
+18    2020-10-28
+19    2020-12-15
+20    2020-12-08
+21    2020-09-04
+22    2020-09-13
+23    2020-05-08
+24    2020-07-08
+25    2020-12-15
+26    2020-09-29
+27    2020-03-10
+28    2020-08-21
+29    2020-10-23
+30    2020-05-02
+31    2020-10-14
+32    2020-09-17
+33    2020-10-28
+34    2020-10-16
+35    2020-07-25
+36    2020-07-12
+37    2020-07-04
+38    2020-12-23
+39    2020-06-13
+40    2020-12-29
+41    2020-11-19
+42    2020-09-10
+43    2020-12-27
+44    2020-08-10
+45    2020-06-21
+46    2020-07-30
+47    2020-09-27
+48    2020-06-15
+49    2020-11-18
+Name: date, dtype: object
+2021-01-05 13:14:40,678::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 13:14:42,527::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:04 
+---------------------------------------------------------------------------------
+2021-01-05 13:14:47,915::home.home::DEBUG::Thread-6 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:14:47,917::home.home::DEBUG::Thread-6 - PH
+2021-01-05 13:15:31,790::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 13:15:37,693::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:08 
+---------------------------------------------------------------------------------
+2021-01-05 13:15:44,493::home.home::DEBUG::Thread-6 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:15:44,498::home.home::DEBUG::Thread-6 - PH
+2021-01-05 13:18:32,512::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 13:18:34,356::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:04 
+---------------------------------------------------------------------------------
+2021-01-05 13:18:46,825::home.home::DEBUG::Thread-6 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:18:46,826::home.home::DEBUG::Thread-6 - PH
+2021-01-05 13:21:28,786::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 13:21:33,732::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:07 
+---------------------------------------------------------------------------------
+2021-01-05 13:22:19,591::home.home::DEBUG::Thread-6 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:22:19,595::home.home::DEBUG::Thread-6 - PH
+2021-01-05 13:22:29,026::home.home::DEBUG::Thread-8 - ['2020-05-09', '2020-05-06', '2020-09-02', '2020-04-28', '2020-04-21', '2020-11-17', '2020-07-31', '2020-05-27', '2020-12-08', '2020-05-08', '2020-03-10', '2020-05-02', '2020-10-28', '2020-12-23', '2020-09-10', '2020-06-21', '2020-06-15']
+2021-01-05 13:25:15,776::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 13:25:19,519::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:05 
+---------------------------------------------------------------------------------
+2021-01-05 13:25:26,299::home.home::DEBUG::Thread-6 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:25:26,301::home.home::DEBUG::Thread-6 - PH
+2021-01-05 13:25:34,458::home.home::DEBUG::Thread-8 - ['2020-05-09', '2020-05-06', '2020-09-02', '2020-04-28', '2020-04-21', '2020-11-17', '2020-07-31', '2020-05-27', '2020-12-08', '2020-05-08', '2020-03-10', '2020-05-02', '2020-10-28', '2020-12-23', '2020-09-10', '2020-06-21', '2020-06-15']
+2021-01-05 13:29:08,480::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 13:29:14,974::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:08 
+---------------------------------------------------------------------------------
+2021-01-05 13:29:23,858::home.home::DEBUG::Thread-6 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:29:23,859::home.home::DEBUG::Thread-6 - PH
+2021-01-05 13:30:06,208::home.home::DEBUG::Thread-12 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:30:06,221::home.home::DEBUG::Thread-12 - VN
+2021-01-05 13:32:34,903::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 13:32:37,460::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:04 
+---------------------------------------------------------------------------------
+2021-01-05 13:34:24,680::__main__::DEBUG::Thread-1 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 13:34:24,680::__main__::DEBUG::Thread-1 - --
+2021-01-05 13:34:24,682::__main__::DEBUG::Thread-1 - >>INFO: Setting Last updated to -> 2021-01-05 13:34:24
+2021-01-05 13:35:46,488::home.home::DEBUG::Thread-8 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:35:46,489::home.home::DEBUG::Thread-8 - PH
+2021-01-05 13:40:46,647::__main__::DEBUG::Thread-13 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 13:40:46,647::__main__::DEBUG::Thread-13 - --
+2021-01-05 13:40:46,647::__main__::DEBUG::Thread-13 - >>INFO: Setting Last updated to -> 2021-01-05 13:40:46
+2021-01-05 13:45:46,645::__main__::DEBUG::Thread-15 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 13:45:46,645::__main__::DEBUG::Thread-15 - --
+2021-01-05 13:45:46,645::__main__::DEBUG::Thread-15 - >>INFO: Setting Last updated to -> 2021-01-05 13:45:46
+2021-01-05 13:50:46,656::__main__::DEBUG::Thread-17 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 13:50:46,656::__main__::DEBUG::Thread-17 - --
+2021-01-05 13:50:46,659::__main__::DEBUG::Thread-17 - >>INFO: Setting Last updated to -> 2021-01-05 13:50:46
+2021-01-05 13:53:03,875::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 13:53:28,991::util.util::DEBUG::MainThread - 
+ ------------------------------------------ Starting App -------------------------------------------
+
+2021-01-05 13:53:30,940::pulseGold.pulseGoldUtil::DEBUG::MainThread - >>INFO: Merging Data for Pulse Gold .. .. .. ..
+2021-01-05 13:53:31,142::pulseGold.pulseGoldUtil::DEBUG::MainThread - >>INFO: Getting Events and subs merge Data ... 
+2021-01-05 13:53:37,588::pulseGold.pulseGoldUtil::ERROR::MainThread -  **Exception in subscriptionPurchasedPlot
+-------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\divya\Desktop\projects\newDashboard\dashboard\util\exceptionHandler.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\divya\Desktop\projects\newDashboard\dashboard\pulseGold\pulseGoldUtil.py", line 339, in subscriptionPurchasedPlot
+    return mpl_to_plotly(fig)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\tools.py", line 112, in mpl_to_plotly
+    matplotlylib.Exporter(renderer).run(fig)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\exporter.py", line 51, in run
+    self.crawl_fig(fig)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\exporter.py", line 118, in crawl_fig
+    self.crawl_ax(ax)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\exporter.py", line 123, in crawl_ax
+    props=utils.get_axes_properties(ax)):
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\utils.py", line 272, in get_axes_properties
+    'axes': [get_axis_properties(ax.xaxis),
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\utils.py", line 236, in get_axis_properties
+    props['grid'] = get_grid_style(axis)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\utils.py", line 246, in get_grid_style
+    if axis._gridOnMajor and len(gridlines) > 0:
+AttributeError: 'XAxis' object has no attribute '_gridOnMajor'
+2021-01-05 13:53:39,015::pulseGold.pulseGoldUtil::ERROR::MainThread -  **Exception in cancelledPurchasedPlot
+-------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\divya\Desktop\projects\newDashboard\dashboard\util\exceptionHandler.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\divya\Desktop\projects\newDashboard\dashboard\pulseGold\pulseGoldUtil.py", line 290, in cancelledPurchasedPlot
+    return mpl_to_plotly(fig)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\tools.py", line 112, in mpl_to_plotly
+    matplotlylib.Exporter(renderer).run(fig)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\exporter.py", line 51, in run
+    self.crawl_fig(fig)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\exporter.py", line 118, in crawl_fig
+    self.crawl_ax(ax)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\exporter.py", line 123, in crawl_ax
+    props=utils.get_axes_properties(ax)):
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\utils.py", line 272, in get_axes_properties
+    'axes': [get_axis_properties(ax.xaxis),
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\utils.py", line 236, in get_axis_properties
+    props['grid'] = get_grid_style(axis)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\utils.py", line 246, in get_grid_style
+    if axis._gridOnMajor and len(gridlines) > 0:
+AttributeError: 'XAxis' object has no attribute '_gridOnMajor'
+2021-01-05 13:53:39,432::pulseGold.pulseGoldUtil::ERROR::MainThread -  **Exception in uninstalledPurchasedPlot
+-------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\divya\Desktop\projects\newDashboard\dashboard\util\exceptionHandler.py", line 40, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\divya\Desktop\projects\newDashboard\dashboard\pulseGold\pulseGoldUtil.py", line 251, in uninstalledPurchasedPlot
+    return mpl_to_plotly(fig)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\tools.py", line 112, in mpl_to_plotly
+    matplotlylib.Exporter(renderer).run(fig)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\exporter.py", line 51, in run
+    self.crawl_fig(fig)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\exporter.py", line 118, in crawl_fig
+    self.crawl_ax(ax)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\exporter.py", line 123, in crawl_ax
+    props=utils.get_axes_properties(ax)):
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\utils.py", line 272, in get_axes_properties
+    'axes': [get_axis_properties(ax.xaxis),
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\utils.py", line 236, in get_axis_properties
+    props['grid'] = get_grid_style(axis)
+  File "C:\Users\divya\AppData\Local\Programs\Python\Python38\lib\site-packages\plotly\matplotlylib\mplexporter\utils.py", line 246, in get_grid_style
+    if axis._gridOnMajor and len(gridlines) > 0:
+AttributeError: 'XAxis' object has no attribute '_gridOnMajor'
+2021-01-05 13:53:44,826::__main__::DEBUG::MainThread - 
+
+---------------------------------------------------------------------------------
+Total time taken(H:M:S) - 00:00:17 
+---------------------------------------------------------------------------------
+2021-01-05 13:54:09,816::home.home::DEBUG::Thread-6 - >>CALLBACK:----realTime event-line Callback-------
+2021-01-05 13:54:09,818::home.home::DEBUG::Thread-6 - PH
+2021-01-05 13:59:09,799::__main__::DEBUG::Thread-10 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 13:59:09,800::__main__::DEBUG::Thread-10 - --
+2021-01-05 13:59:09,801::__main__::DEBUG::Thread-10 - >>INFO: Setting Last updated to -> 2021-01-05 13:59:09
+2021-01-05 14:04:09,793::__main__::DEBUG::Thread-12 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 14:04:09,796::__main__::DEBUG::Thread-12 - --
+2021-01-05 14:04:09,796::__main__::DEBUG::Thread-12 - >>INFO: Setting Last updated to -> 2021-01-05 14:04:09
+2021-01-05 14:09:10,645::__main__::DEBUG::Thread-14 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 14:09:10,645::__main__::DEBUG::Thread-14 - --
+2021-01-05 14:09:10,646::__main__::DEBUG::Thread-14 - >>INFO: Setting Last updated to -> 2021-01-05 14:09:10
+2021-01-05 14:14:11,642::__main__::DEBUG::Thread-16 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 14:14:11,642::__main__::DEBUG::Thread-16 - --
+2021-01-05 14:14:11,643::__main__::DEBUG::Thread-16 - >>INFO: Setting Last updated to -> 2021-01-05 14:14:11
+2021-01-05 14:19:11,641::__main__::DEBUG::Thread-18 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 14:19:11,642::__main__::DEBUG::Thread-18 - --
+2021-01-05 14:19:11,642::__main__::DEBUG::Thread-18 - >>INFO: Setting Last updated to -> 2021-01-05 14:19:11
+2021-01-05 14:24:11,642::__main__::DEBUG::Thread-20 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 14:24:11,642::__main__::DEBUG::Thread-20 - --
+2021-01-05 14:24:11,643::__main__::DEBUG::Thread-20 - >>INFO: Setting Last updated to -> 2021-01-05 14:24:11
+2021-01-05 14:42:17,251::__main__::DEBUG::Thread-22 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 14:42:17,251::__main__::DEBUG::Thread-22 - --
+2021-01-05 14:42:17,252::__main__::DEBUG::Thread-22 - >>INFO: Setting Last updated to -> 2021-01-05 14:42:17
+2021-01-05 14:44:11,613::__main__::DEBUG::Thread-24 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 14:44:11,615::__main__::DEBUG::Thread-24 - --
+2021-01-05 14:44:11,637::__main__::DEBUG::Thread-24 - >>INFO: Setting Last updated to -> 2021-01-05 14:44:11
+2021-01-05 14:49:11,614::__main__::DEBUG::Thread-26 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 14:49:11,614::__main__::DEBUG::Thread-26 - --
+2021-01-05 14:49:11,615::__main__::DEBUG::Thread-26 - >>INFO: Setting Last updated to -> 2021-01-05 14:49:11
+2021-01-05 14:54:11,614::__main__::DEBUG::Thread-28 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 14:54:11,615::__main__::DEBUG::Thread-28 - --
+2021-01-05 14:54:11,615::__main__::DEBUG::Thread-28 - >>INFO: Setting Last updated to -> 2021-01-05 14:54:11
+2021-01-05 14:59:11,612::__main__::DEBUG::Thread-30 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 14:59:11,612::__main__::DEBUG::Thread-30 - --
+2021-01-05 14:59:11,612::__main__::DEBUG::Thread-30 - >>INFO: Setting Last updated to -> 2021-01-05 14:59:11
+2021-01-05 15:04:11,613::__main__::DEBUG::Thread-32 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 15:04:11,613::__main__::DEBUG::Thread-32 - --
+2021-01-05 15:04:11,614::__main__::DEBUG::Thread-32 - >>INFO: Setting Last updated to -> 2021-01-05 15:04:11
+2021-01-05 15:09:11,615::__main__::DEBUG::Thread-34 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 15:09:11,615::__main__::DEBUG::Thread-34 - --
+2021-01-05 15:09:11,616::__main__::DEBUG::Thread-34 - >>INFO: Setting Last updated to -> 2021-01-05 15:09:11
+2021-01-05 15:14:11,612::__main__::DEBUG::Thread-36 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 15:14:11,613::__main__::DEBUG::Thread-36 - --
+2021-01-05 15:14:11,614::__main__::DEBUG::Thread-36 - >>INFO: Setting Last updated to -> 2021-01-05 15:14:11
+2021-01-05 15:19:11,613::__main__::DEBUG::Thread-38 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 15:19:11,613::__main__::DEBUG::Thread-38 - --
+2021-01-05 15:19:12,173::__main__::DEBUG::Thread-38 - >>INFO: Setting Last updated to -> 2021-01-05 15:19:12
+2021-01-05 15:24:11,613::__main__::DEBUG::Thread-40 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 15:24:11,613::__main__::DEBUG::Thread-40 - --
+2021-01-05 15:24:11,614::__main__::DEBUG::Thread-40 - >>INFO: Setting Last updated to -> 2021-01-05 15:24:11
+2021-01-05 15:29:11,611::__main__::DEBUG::Thread-42 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 15:29:11,612::__main__::DEBUG::Thread-42 - --
+2021-01-05 15:29:11,612::__main__::DEBUG::Thread-42 - >>INFO: Setting Last updated to -> 2021-01-05 15:29:11
+2021-01-05 15:34:11,611::__main__::DEBUG::Thread-44 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 15:34:11,611::__main__::DEBUG::Thread-44 - --
+2021-01-05 15:34:11,612::__main__::DEBUG::Thread-44 - >>INFO: Setting Last updated to -> 2021-01-05 15:34:11
+2021-01-05 15:39:11,612::__main__::DEBUG::Thread-46 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 15:39:11,612::__main__::DEBUG::Thread-46 - --
+2021-01-05 15:39:11,613::__main__::DEBUG::Thread-46 - >>INFO: Setting Last updated to -> 2021-01-05 15:39:11
+2021-01-05 15:44:11,612::__main__::DEBUG::Thread-48 - >>CALLBACK: ----Initial Callback-------
+2021-01-05 15:44:11,613::__main__::DEBUG::Thread-48 - --
+2021-01-05 15:44:11,613::__main__::DEBUG::Thread-48 - >>INFO: Setting Last updated to -> 2021-01-05 15:44:11
