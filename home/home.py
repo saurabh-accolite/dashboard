@@ -7,6 +7,7 @@ from dash.dependencies import Input, Output,State
 import dash_core_components as dcc
 from home.homeUtil import HomeUtil
 import dash 
+import pandas as pd
 
 homeUtil = HomeUtil()
 util = homeUtil.util
@@ -19,6 +20,7 @@ print = logger.debug
 
 
 def get_cards(count, id, description):
+        ## Give yes or no -- for trendlines
         # event_count = self.util.get_event_count(event, 'today')[0]
         # event_count = 0 if pd.isna(event_count) else event_count
         return dbc.Card(
@@ -27,31 +29,26 @@ def get_cards(count, id, description):
                     # count
                     # dbc.Spinner(
                     #     [
-                    html.H1(children=count,
-                            id=id, className="card-title", style={'display': 'inline-block'}),
-
-
+                    html.H1(children=count,id=id, className="card-title", style={'display': 'inline-block'}),
                     # description
-                    html.P(description, style={
-                        'display': 'inline-block', 'text-indent': '12px'}),
-                    # line
+                    html.P(description, style={'display': 'inline-block', 'text-indent': '12px'},className="card-title")
+                    # html.P(" ", style={'display':'inline-block','text-indent':'6px'}, className="card-title"),
                     # html.Hr(),
-                    # html.Div(self.util.get_trend_lines(event, '300px'), id=id+'trendline',
+                    # html.Div(homeUtil.customTrendLine(df,x,y,country), id=id+'trendline',
                     #         style={'text-align': 'center', 'align': 'center'})
                     #     ],
                     # color="primary",
                     #     type="grow"
                     # ),
-                ]
-            )
+                ])
         )
 
 initial_usage_cards_1 = dbc.CardDeck(
     [   
-        get_cards(homeUtil.firstOpenCard('PH'),'first-open-count',"Total First Open Users"),
-        get_cards(homeUtil.regCard('PH'),'reg-count',"Total Registration"),
-        get_cards(homeUtil.babylonCard('PH')[0],'babylon-ha-count',"Total Babylon Health Assesment "),
-        get_cards(homeUtil.babylonCard('PH')[1],'babylon-sc-count',"Total Babylon Symptoms Checker"),
+        get_cards(homeUtil.foRegCard('PH')[0],'first-open-count',"Total First Open"),
+        get_cards(homeUtil.foRegCard('PH')[1],'reg-count',"Total Registration"),
+        get_cards(homeUtil.babylonCard('PH')[0],'babylon-ha-count',"Total Health Assesment "),
+        get_cards(homeUtil.babylonCard('PH')[1],'babylon-sc-count',"Total Symptom Checker"),
         # get_cards(homeUtil.firstOpenCard('P'),'first-open-count',"Total First Open Users"),
         # get_cards(homeUtil.firstOpenCard('PH'),'first-open-count',"Total First Open Users"),
         # get_cards([decrpt_merge['ehr_MY.encounterId'].nunique()],'ehr_registered-user-count',"Total Encounters"),
@@ -84,29 +81,49 @@ countryDropdown = html.Div([
 #         homeUtil.get_cards(['Symptom Checker Start'],'symptom-checker-count',"Availed Symptom Checker")
 #     ])
 
-# goldCharts = html.Div([
-#     util.get_section_headers("Pulse Gold Indonesia overview"),
+bigNoChart = html.Div([
+    util.get_section_headers("Feature Trendlines"),
 
-#     dbc.Row(
-#         [
-#             dbc.Col(
-#                 [
-#                     dbc.Row(
-#                         [
-#                             dbc.Col(
-#                                 html.Div(
-#                                     util.style_graph(id='gold_numberTable_bar', figure=pulseGoldUtil.getNumberTable(),
-#                                                      margintop='0.1mm', height=350), id='gold_numberTable_div',
-#                                     style={'margin': 'auto'}
+    dbc.Row(
+        [
+            dbc.Col(
+                [
+                    dbc.Row([
+                        dbc.Col(
+                            html.Div([
+                            #dropdown
+                            dcc.Dropdown(
+                            id='feature-dropdown',
+                            options=[{'label':value, 'value':key} for key,value in homeUtil.featureDict.items()],
+                            placeholder="Select Feature",
+                            # value="PH",
+                            # multi=True
+                            # style={'width':'50%'}
+                        )
+                    ], style={'width':'40%','margin':'auto','margin-left':'0px'}
+                    ),
+                        )
+                    ]
 
-#                                 )
-#                             ),
-#                         ]
-#                     ),
-#                 ]
-#             )
-#         ]
-#     )
+                    ),
+                    html.Br(),
+                    dbc.Row(
+                        [
+                            dbc.Col(
+                                html.Div(
+                                     id='big-no-trendline-div',
+                                    style={'margin': 'auto'}
+
+                                )
+                            ),
+                        ]
+                    ),
+                ]
+            )
+        ]
+    )
+]
+)
 
 
 layout = html.Div([
@@ -117,11 +134,11 @@ layout = html.Div([
         # html.Br(),
         countryDropdown,
         # dropdwn,
-        initial_usage_cards_1
+        initial_usage_cards_1,
         # html.Hr(),
         # html.Br(),
         
-        # goldCharts,
+        bigNoChart,
         # usageChart,
         # overlapChart,
         # ChurnChart
@@ -141,9 +158,41 @@ def update_cards(value):
     # print(dash.callback_context.triggered)
     # util.doUpdateQueryResults()
     if value is not None:
-        return [homeUtil.firstOpenCard(value), homeUtil.regCard(value), homeUtil.babylonCard(value)[0],  homeUtil.babylonCard(value)[1]]
+        return [homeUtil.foRegCard(value)[0], homeUtil.foRegCard(value)[1], homeUtil.babylonCard(value)[0],  homeUtil.babylonCard(value)[1]]
+    return [None,None,None,None]
 
+@app.callback([Output('big-no-trendline-div','children')],
+            [Input('feature-dropdown','value'),Input('country-dropdown','value')])
+def get_trend_lines(feature,country):
+    if feature is not None and country is not None:
+        if(feature == 'fo'):
+            # print(homeUtil.regDf['date'])
+            df = homeUtil.regDf[homeUtil.regDf['countryCode'] == country]
+            df.sort_values(by=['date'],inplace=True)
+            x = df['date']
+            y = df['FirstOpen']
+            title = 'First Open'
+        elif (feature == 'reg'):
+            df = homeUtil.regDf[homeUtil.regDf['countryCode'] == country]
+            df.sort_values(by=['date'],inplace=True)
+            x = df.date
+            y = df.Registration
+            title = 'Registration'
+        elif(feature=='ha'):
+            df = homeUtil.babylonDf[homeUtil.regDf['countryCode'] == country]
+            df.sort_values(by=['date'],inplace=True)
+            x = df.date
+            y = df.ha
+            title = 'Health Assessment'
+        elif(feature=='sc'):
+            df = homeUtil.babylonDf[homeUtil.regDf['countryCode'] == country]
+            df.sort_values(by=['date'],inplace=True)
+            x = df.date
+            y = df.sc
+            title = 'Symptom Checker'
 
-
+        return util.style_graph(id='big-no-trendline', figure=util.getLineChart([x],[y],[title],'Date','Count',title,hoverinfo='all',mode='lines+markers',legend_orientation="h"),
+                                                     margintop='0.1mm', height=350),
+    return [None]
 
 

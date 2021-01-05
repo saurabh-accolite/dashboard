@@ -39,7 +39,7 @@ from home import home
 # from heatMap import heatMap
 # from EHR import EHR
 # from EHR.PH import EHR as EHR_PH
-# from pulseGold import pulseGold
+from pulseGold import pulseGold
 
 
 import util.appLogger as appLogger
@@ -57,11 +57,11 @@ searchResults = []
 
 tabs = dbc.Tabs(
     [
-        # dbc.Tab(label='Home', tab_id='home',
-        # children=[
-        #     home.layout
-        #     ]
-        #     ),
+        dbc.Tab(label='Home', tab_id='home',
+        children=[
+            home.layout
+            ]
+            ),
         # dbc.Tab(label='Policy Sales', tab_id='polSales',
         # children=[
         #    polSales.layout
@@ -104,9 +104,9 @@ tabs = dbc.Tabs(
         #     html.Div([custSegment.layout])
            
         # ]),
-        dbc.Tab(label='Home', tab_id='home',
+        dbc.Tab(label='PulseGold', tab_id='pulseGold',
         children=[
-            html.Div([home.layout])
+            html.Div([pulseGold.layout])
            
         ]),
         
