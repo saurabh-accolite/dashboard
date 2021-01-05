@@ -60,7 +60,6 @@ class Util:
             self.config = config
             # self.countryCode = self.config.countryCode
             self.cbPython = CouchbasePython(self.config.cb_url,self.config.cb_username,self.config.cb_password)
-            df = self.cbPython.getFirstOpenCount(self.config.cb_buckets, None)
             if self.config.dataSource == 'Druid':
                 # self.druidPython = DruidPython(self.config.druid_url,self.config.druid_host,self.config.druid_port,self.config.druid_username,self.config.druid_password,self.config.druid_events,self.config.druid_customer,self.config.druid_dpasPolicy,self.config.druid_dpasBen,self.config.druid_dpasCust)
                 #couchbase
