@@ -104,11 +104,11 @@ tabs = dbc.Tabs(
         #     html.Div([custSegment.layout])
            
         # ]),
-        dbc.Tab(label='PulseGold', tab_id='pulseGold',
-        children=[
-            html.Div([pulseGold.layout])
+        # dbc.Tab(label='PulseGold', tab_id='pulseGold',
+        # children=[
+        #     html.Div([pulseGold.layout])
            
-        ]),
+        # ]),
         
         # # dcc.Tab(label='User Behaviour', value='user-behaviour',
         # # children=[]),

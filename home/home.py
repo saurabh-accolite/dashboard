@@ -30,7 +30,7 @@ def get_cards(count, id, description):
                     html.H1(children=count,
                             id=id, className="card-title", style={'display': 'inline-block'}),
                     html.P(description, style={
-                        'display': 'inline-block', 'text-indent': '12px',className="card-title"}),
+                        'display': 'inline-block', 'text-indent': '12px'},className="card-title"),
                 ]
             )
         )
@@ -119,9 +119,9 @@ dropdownAndDatePicker = html.Div([
     # html.Div([
                 html.Div(
                     util.getDateRangePicker('date-picker-range', startDate, endDate, minDate, maxDate),
-                    style={'text-align':'left', 'display': 'inline-block','margin':'auto','margin-left':'680px'}
+                    style={'text-align':'left', 'display': 'inline-block','margin':'auto','margin-left':'500px','margin-top':'13px'}
                 ),
-
+                # 'margin-left':'680px'
                 html.Div([
                     dcc.Dropdown(
                         id='country-dropdown',
@@ -129,13 +129,13 @@ dropdownAndDatePicker = html.Div([
                         placeholder="Select Country",
                         value="PH",
                     )
-                ], style={'display': 'inline-block','width':'15%','margin':'auto','float':'right'}), 
+                ], style={'display': 'inline-block','width':'25%','margin':'auto','float':'right'}), 
         # ]),
 ])
 
 layout = html.Div([
-    dropdownAndDatePicker,
     html.Hr(),
+    dropdownAndDatePicker,
     html.Br(),
     initial_usage_cards_1,
     bigNoChart
