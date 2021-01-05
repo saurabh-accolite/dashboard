@@ -7,7 +7,7 @@ import datetime as dt
 import time
 import matplotlib.pyplot as plt
 import matplotlib
-# Third party imports
+# Third party imports 
 import dash_table
 import pandas as pd
 import numpy as np

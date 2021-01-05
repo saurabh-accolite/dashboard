@@ -1,12 +1,13 @@
 import dash_bootstrap_components as dbc
 import dash_html_components as html
-from datetime import timedelta,datetime 
+from datetime import timedelta,datetime  
 
 # import dash
 from dash.dependencies import Input, Output,State
 import dash_core_components as dcc
 from home.homeUtil import HomeUtil
 import dash 
+import pandas as pd
 
 homeUtil = HomeUtil()
 util = homeUtil.util
@@ -17,131 +18,93 @@ import util.appLogger as appLogger
 logger = appLogger.get_logger(__name__)
 print = logger.debug
 
+startDate = pd.to_datetime('2020-12-01')
+endDate = pd.to_datetime('2020-12-31')
+minDate = pd.to_datetime('2020-12-01')
+maxDate = pd.to_datetime('2020-12-31')
 
 def get_cards(count, id, description):
-        # event_count = self.util.get_event_count(event, 'today')[0]
-        # event_count = 0 if pd.isna(event_count) else event_count
         return dbc.Card(
             dbc.CardBody(
                 [
-                    # count
-                    # dbc.Spinner(
-                    #     [
                     html.H1(children=count,
                             id=id, className="card-title", style={'display': 'inline-block'}),
-
-
-                    # description
                     html.P(description, style={
                         'display': 'inline-block', 'text-indent': '12px'}),
-                    # line
-                    # html.Hr(),
-                    # html.Div(self.util.get_trend_lines(event, '300px'), id=id+'trendline',
-                    #         style={'text-align': 'center', 'align': 'center'})
-                    #     ],
-                    # color="primary",
-                    #     type="grow"
-                    # ),
                 ]
             )
         )
 
 initial_usage_cards_1 = dbc.CardDeck(
     [   
-        get_cards(homeUtil.firstOpenCard('PH'),'first-open-count',"Total First Open Users"),
-        get_cards(homeUtil.regCard('PH'),'reg-count',"Total Registration"),
-        get_cards(homeUtil.babylonCard('PH')[0],'babylon-ha-count',"Total Babylon Health Assesment "),
-        get_cards(homeUtil.babylonCard('PH')[1],'babylon-sc-count',"Total Babylon Symptoms Checker"),
-        # get_cards(homeUtil.firstOpenCard('P'),'first-open-count',"Total First Open Users"),
-        # get_cards(homeUtil.firstOpenCard('PH'),'first-open-count',"Total First Open Users"),
-        # get_cards([decrpt_merge['ehr_MY.encounterId'].nunique()],'ehr_registered-user-count',"Total Encounters"),
-        # EHRUtil.get_cards(['Full Assessment Completed-Total'],'ehr_healthAsses-user-count',"Full Assessment Completed"),
-        
+        get_cards(homeUtil.firstOpenCard('PH', '2020-12-01', '2020-12-31'),'first-open-count',"Total First Open Users"),
+        get_cards(homeUtil.regCard('PH', '2020-12-01', '2020-12-31'),'reg-count',"Total Registration"),
+        get_cards(homeUtil.babylonCard('PH', '2020-12-01', '2020-12-31')[0],'babylon-ha-count',"Total Babylon Health Assesment "),
+        get_cards(homeUtil.babylonCard('PH', '2020-12-01', '2020-12-31')[1],'babylon-sc-count',"Total Babylon Symptoms Checker"),        
     ])
 
 
-countryDropdown = html.Div([
+# countryDropdown = html.Div([
 
-                        html.Div([
-                    #dropdown
-                        dcc.Dropdown(
-                            id='country-dropdown',
-                            options=[{'label':value, 'value':value} for value in util.config.countryCode],
-                            placeholder="Select Country",
-                            value="PH",
-                            # multi=True
-                            # style={'width':'50%'}
-                        )
-                    ], style={'width':'10%','margin':'auto','margin-right':'10px'}
-                    ),
+#                         html.Div([
+#                         dcc.Dropdown(
+#                             id='country-dropdown',
+#                             options=[{'label':value, 'value':value} for value in util.config.countryCode],
+#                             placeholder="Select Country",
+#                             value="PH",
+#                         )
+#                     ], style={'width':'10%','margin':'auto','margin-right':'0px'}),
 
+#                     html.Div([
+#                         html.Div(
+                            
+#                                     util.getDateRangePicker('date-picker-range'),
+#                                     style={'text-align':'left'}),
+#                     ]) 
+
+#         ])
+
+
+dropdownAndDatePicker = html.Div([
+    
+    # html.Div([
+                html.Div(
+                    util.getDateRangePicker('date-picker-range', startDate, endDate, minDate, maxDate),
+                    style={'text-align':'left', 'display': 'inline-block','margin':'auto','margin-left':'680px'}
+                ),
+
+                html.Div([
+                    dcc.Dropdown(
+                        id='country-dropdown',
+                        options=[{'label':value, 'value':value} for value in util.config.countryCode],
+                        placeholder="Select Country",
+                        value="PH",
+                    )
+                ], style={'display': 'inline-block','width':'15%','margin':'auto','float':'right'}), 
+        # ]),
 ])
 
-# initial_usage_cards = dbc.CardDeck(
-#     [
-#         homeUtil.get_cards(['Registration Completed-Total'],'registered-user-count',"Users on Pulse"),
-#         homeUtil.get_cards(['Health Assessment(Full) Start'],'health-assessment-count',"Availed Full Health Assessment"),
-#         homeUtil.get_cards(['Symptom Checker Start'],'symptom-checker-count',"Availed Symptom Checker")
-#     ])
-
-# goldCharts = html.Div([
-#     util.get_section_headers("Pulse Gold Indonesia overview"),
-
-#     dbc.Row(
-#         [
-#             dbc.Col(
-#                 [
-#                     dbc.Row(
-#                         [
-#                             dbc.Col(
-#                                 html.Div(
-#                                     util.style_graph(id='gold_numberTable_bar', figure=pulseGoldUtil.getNumberTable(),
-#                                                      margintop='0.1mm', height=350), id='gold_numberTable_div',
-#                                     style={'margin': 'auto'}
-
-#                                 )
-#                             ),
-#                         ]
-#                     ),
-#                 ]
-#             )
-#         ]
-#     )
-
-
 layout = html.Div([
-        # dbc.Badge(
-        #     f"Date range - {EHRUtil.decrpt_merge['ehr_MY.auditDetail.createTime'].min()[:10]}  -  {EHRUtil.decrpt_merge['ehr_MY.auditDetail.createTime'].max()[:10]}", 
-        #     color="light", className="mr-1",style={"float":"right"}
-        #     ),
-        # html.Br(),
-        countryDropdown,
-        # dropdwn,
-        initial_usage_cards_1
-        # html.Hr(),
-        # html.Br(),
-        
-        # goldCharts,
-        # usageChart,
-        # overlapChart,
-        # ChurnChart
-        
-        
-    ])
+    dropdownAndDatePicker,
+    html.Hr(),
+    html.Br(),
+    initial_usage_cards_1
+])
 
 #=============================================== callbacks ====================================================
 
-@app.callback([Output('first-open-count', 'children'), Output('reg-count', 'children'),  Output('babylon-ha-count', 'children'),  Output('babylon-sc-count', 'children')], 
-              [Input('country-dropdown','value')
-              ])
-def update_cards(value):
-    
+@app.callback([Output('first-open-count', 'children'), Output('reg-count', 'children'),  
+               Output('babylon-ha-count', 'children'),  Output('babylon-sc-count', 'children')], 
+              [Input('country-dropdown','value'), Input('date-picker-range','start_date'),
+            Input('date-picker-range','end_date')])
+
+def update_cards(value, startDate, endDate):
     print(">>CALLBACK:----realTime event-line Callback-------")
     print(value)
-    # print(dash.callback_context.triggered)
-    # util.doUpdateQueryResults()
+    print(startDate)
+    print(endDate)
     if value is not None:
-        return [homeUtil.firstOpenCard(value), homeUtil.regCard(value), homeUtil.babylonCard(value)[0],  homeUtil.babylonCard(value)[1]]
+        return [homeUtil.firstOpenCard(value, startDate, endDate), homeUtil.regCard(value, startDate, endDate), homeUtil.babylonCard(value, startDate, endDate)[0],  homeUtil.babylonCard(value, startDate, endDate)[1]]
 
 
 

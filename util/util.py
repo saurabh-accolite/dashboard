@@ -10,7 +10,7 @@ import datetime as dt
 import pytz
 import time
 from pathlib import Path
-# Third party imports
+# Third party imports 
 import dash_table
 import pandas as pd
 import numpy as np

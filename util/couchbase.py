@@ -34,7 +34,7 @@ class CouchbasePython:
         cb = self.cluster.bucket(bucket)
 
         query = f'''
-        select channel, countryCode, date, distinctCount from `{bucket}` where type_='FirstOpen' and date > {start} limit 50
+        select channel, countryCode, date, distinctCount from `{bucket}` where type_='FirstOpen' and date > {start} limit 200
         '''
 
         event_query_result = self.cluster.query(query, timeout= datetime.timedelta(seconds=500))
@@ -42,7 +42,6 @@ class CouchbasePython:
         for row in event_query_result:
             eventTmp.append(row)
         df_event = json_normalize(eventTmp)
-        print(df_event.head())
         return df_event
 
     def getRegCount(self,bucket,start,end=None):
@@ -62,15 +61,12 @@ class CouchbasePython:
         for row in event_query_result:
             eventTmp.append(row)
         df_event = json_normalize(eventTmp)
-        print(df_event.columns)
-        print(df_event['events'][0])
         for i, row in df_event.iterrows():
             reg = df_event['events'][i][2]['platform.UserRegistration.createCustomer.TermsAcceptedState']
             df_event.at[i,'Registration'] = reg
-        print(df_event.head())
+    
         df_event['countryCode'] = df_event.type_.str.strip().str[-2:]
         df_event['countryCode'] = df_event['countryCode'].apply(lambda x: 'PH' if x == 'nt' else x)
-        print(df_event.countryCode)
         return df_event
 
     def getBabylonCount(self,bucket,start,end=None):
@@ -90,23 +86,16 @@ class CouchbasePython:
         for row in event_query_result:
             eventTmp.append(row)
         df_event = json_normalize(eventTmp)
-        print(df_event.columns)
-        print(df_event['events'][0])
+        
         for i, row in df_event.iterrows():
             hac = df_event['events'][i][2]['pulse.babylon.healthAssessment.chat.fullAssessment.start']
             df_event.at[i,'ha'] = hac
             scc = df_event['events'][i][3]['pulse.babylon.symptomChecker.chat.start']
             df_event.at[i,'sc'] = scc
 
-        print(df_event.head())
         df_event['countryCode'] = df_event.type_.str.strip().str[-2:]
         df_event['countryCode'] = df_event['countryCode'].apply(lambda x: 'PH' if x == 'nt' else x)
-        print(df_event.countryCode)
-        return df_event
-
-
-
-
+        return df_event 
 
     # def getTagWiseHourlyData_cb(self,bucket,start,end=None):
     #     if start is None:
@@ -132,5 +121,3 @@ class CouchbasePython:
     #         eventTmp.append(row)
     #     df_event = json_normalize(eventTmp)
     #     return df_event
-
-    

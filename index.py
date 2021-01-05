@@ -10,7 +10,7 @@ import dash_bootstrap_components as dbc
 import dash_table
 import pandas as pd
 import datetime as dt
-import time
+import time 
 
 # starting time
 start = time.time()

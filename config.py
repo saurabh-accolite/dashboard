@@ -9,7 +9,7 @@ druid_port = '8888'
 druid_username = None
 druid_password = None
 
-druid_events = 'PH_data'
+druid_events = 'PH_data' 
 druid_productCode = 'polSal'
 druid_customer = 'PH_PlseCustomer'
 druid_dpasPolicy = 'PH_PolicyDPAS'
